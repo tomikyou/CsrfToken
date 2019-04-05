@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  a(href="/login") Login(Login by csrfToken)
+  br
+
+  a(href="/login_evil") Login evil(No csrfToken)
+  br
+
+  if (certification)
+    p success
